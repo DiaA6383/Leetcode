@@ -11,17 +11,18 @@ int main() {
   class Solution {
   public:
     int mostWordsFound(std::vector<std::string> &sentences) {
-      int count = 1;
-      int max_int = 0;
+      int count = 1;   // will automatically be 1 (one word)
+      int max_int = 0; // just initialize
       char space = ' ';
 
       for (int i = 0; i < sentences.size(); i++) {
-        for (int j = 0; j < sentences[i].length(); j++) {
+        for (int j = 0; j < sentences[i].length();
+             j++) { // iterate through each char in string vector
           if (sentences[i][j] == space) {
-            count++;
+            count++; // iterate count if char is space
           }
         }
-        if (count > max_int) {
+        if (count > max_int) { // compare for top spot
           max_int = count;
         }
         count = 1; // reset
