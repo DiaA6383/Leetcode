@@ -16,9 +16,9 @@ int main() {
       char space = ' ';
 
       for (int i = 0; i < sentences.size(); i++) {
-        for (int j = 0; j < sentences[i].length();
-             j++) { // iterate through each char in string vector
+        for (int j = 0; j < sentences[i].length(); j++) {
           if (sentences[i][j] == space) {
+            // iterate through each char in string vector
             count++; // iterate count if char is space
           }
         }
