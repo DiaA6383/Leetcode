@@ -5,21 +5,10 @@
 class Solution {
 public:
   int minimumSum(int num) {
-    int max = 0;
-    int count = 0;
-    std::vector<int> entries;
+    std::string s = std::to_string(num); // converts to string
+    sort(begin(s), end(s));              // sorts
 
-    while (num != 0) {
-      entries.push_back(num % 10);
-      num = num / 10;
-      count++;
-    }
-
-    for (int i = 0; i < entries.size(); i++) {
-      for (int j = 0; j < i; j++) {
-      }
-    }
-
-    return max;
+    return stoi(s.substr(0, 1) + s.substr(2, 1)) + // string to int
+           stoi(s.substr(1, 1) + s.substr(3, 1));
   }
 };
