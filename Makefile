@@ -4,7 +4,7 @@ CXXFLAGS = -std=c++17 -g -Wall
 SRC = '.'
 EXEC = main
 
-OBJ = leetcode.cpp main.cpp
+OBJ =  main.cpp leetcode.cpp
 
 all: $(EXEC)
 

@@ -6,7 +6,8 @@
 #include <vector>
 
 class solution {
-    std::string restoreString(string s, vector<int>& indices);
-}
+    public:
+    std::string restoreString(std::string s, std::vector<int>& indices);
+};
 
 #endif 
